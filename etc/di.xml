@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <type name="Magento\Framework\Webapi\Rest\Response\RendererFactory">
+        <arguments>
+            <argument name="renders" xsi:type="array">
+                <item name="application_pdf" xsi:type="array">
+                    <item name="type" xsi:type="string">application/pdf</item>
+                    <item name="model" xsi:type="string">\N98\WebapiRestPdf\Response\Renderer\PdfRenderer</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+
+</config>
